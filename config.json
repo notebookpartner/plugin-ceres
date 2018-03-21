@@ -221,7 +221,7 @@
         "type"      : "category_select"
     },
     {
-        "tab"       : "Header",
+        "tab"       : {"de": "Kopfzeile", "en": "Header"},
         "key"       : "header.show_navbars",
         "label"     : "Position of the navigation bar",
         "type"      : "dropdown",
@@ -234,14 +234,14 @@
         "default"   : "top"
     },
     {
-        "tab"       : "Header",
+        "tab"       : {"de": "Kopfzeile", "en": "Header"},
         "key"       : "header.fixed_navbar",
         "label"     : "Fix the navigation bar at the top of the page",
         "type"      : "checkbox",
         "default"   : "true"
     },
     {
-        "tab"       : "Header",
+        "tab"       : {"de": "Kopfzeile", "en": "Header"},
         "key"       : "header.show_category_types",
         "label"     : "Type of categories rendered in the navigation",
         "type"      : "dropdown",
@@ -254,7 +254,7 @@
         "default"   : "all"
     },
     {
-        "tab"       : "Header",
+        "tab"       : {"de": "Kopfzeile", "en": "Header"},
         "key"       : "header.basket_values",
         "label"     : "Show shopping cart information",
         "type"      : "dropdown",
@@ -267,7 +267,7 @@
         "default"   : "sum"
     },
     {
-        "tab"           : "Header",
+        "tab"           : {"de": "Kopfzeile", "en": "Header"},
         "key"           : "header.megamenu_levels",
         "label"         : "Category levels in mega menu",
         "type"          : "dropdown",
@@ -281,21 +281,21 @@
         "default"       : "1"
     },
     {
-        "tab"           : "Header",
+        "tab"           : {"de": "Kopfzeile", "en": "Header"},
         "key"           : "header.megamenu_items_stage_1",
         "label"         : "Number of categories in level 2",
         "type"          : "text",
         "default"       : "30"
     },
     {
-        "tab"           : "Header",
+        "tab"           : {"de": "Kopfzeile", "en": "Header"},
         "key"           : "header.megamenu_items_stage_2",
         "label"         : "Number of categories in level 3",
         "type"          : "text",
         "default"       : "3"
     },
     {
-        "tab"           : "Header",
+        "tab"           : {"de": "Kopfzeile", "en": "Header"},
         "key"           : "header.megamenu_items_stage_3",
         "label"         : "Number of categories in level 4",
         "type"          : "text",
