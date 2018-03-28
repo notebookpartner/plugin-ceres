@@ -1,106 +1,106 @@
 [
     {
-        "tab"       : "global.tab",
+        "tab"       : "globalTab",
         "key"       : "header.company_name",
-        "label"     : "global.header_company_name",
+        "label"     : "globalHeaderCompanyName",
         "type"      : "text",
         "default"   : "Ceres Webshop"
     },
     {
-        "tab"       : "global.tab",
+        "tab"       : "globalTab",
         "key"       : "header.company_logo",
-        "label"     : "global.header_company_logo",
+        "label"     : "globalHeaderCompanyLogo",
         "type"      : "text",
         "default"   : "images/ceres-logo.svg"
     },
     {
-        "tab"       : "global.tab",
+        "tab"       : "globalTab",
         "key"       : "global.shippingCostsCategoryId",
-        "label"     : "global.global_shippingCostsCategoryId",
+        "label"     : "globalShippingCostsCategoryId",
         "type"      : "category_select"
     },
     {
-        "tab"       : "global.tab",
+        "tab"       : "globalTab",
         "key"       : "global.default_contact_class_b2b",
-        "label"     : "global.global_default_contact_class_b2b",
+        "label"     : "globalDefaultContactClassB2b",
         "type"      : "text",
         "default"   : ""
     },
     {
-        "tab"       : "global.tab",
+        "tab"       : "globalTab",
         "key"       : "global.enableOldUrlPattern",
-        "label"     : "global.global_enableOldUrlPattern",
+        "label"     : "globalEnableOldUrlPattern",
         "type"      : "checkbox",
         "default"   : "false"
     },
 
     {
-        "tab"                         : "global.tab",
+        "tab"                         : "globalTab",
         "key"                         : "contact.shop_mail",
-        "label"                       : "global.contact_shop_mail",
+        "label"                       : "contactShopMail",
         "type"                        : "text",
         "default"                     : "your@email.com"
     },
     {
-        "tab"                         : "global.tab",
+        "tab"                         : "globalTab",
         "key"                         : "contact.opening_times",
-        "label"                       : "global.contact_opening_times",
+        "label"                       : "contactOpeningTimes",
         "type"                        : "text",
         "default"                     : "Montag - Freitag, 00:00 - 24:00"
     },
     {
-        "tab"                         : "global.tab",
+        "tab"                         : "globalTab",
         "key"                         : "contact.en.opening_times",
-        "label"                       : "global.contact_en_opening_times",
+        "label"                       : "contactEnOpeningTimes",
         "type"                        : "text",
         "default"                     : "Monday - Friday, 00:00 - 24:00"
     },
     {
-        "tab"                         : "global.tab",
+        "tab"                         : "globalTab",
         "key"                         : "contact.show_data",
-        "label"                       : "global.contact_show_data",
+        "label"                       : "contactShowData",
         "type"                        : "multi_select",
         "possibleValues"              :
         {
-            "name"                      : "global.contact_show_data_values.name",
-            "ceo"                       : "global.contact_show_data_values.ceo",
-            "city"                      : "global.contact_show_data_values.city",
-            "country"                   : "global.contact_show_data_values.country",
-            "email"                     : "global.contact_show_data_values.email",
-            "fax"                       : "global.contact_show_data_values.fax",
-            "fon"                       : "global.contact_show_data_values.fon",
-            "hotline"                   : "global.contact_show_data_values.hotline",
-            "street"                    : "global.contact_show_data_values.street",
-            "vatNumber"                 : "global.contact_show_data_values.vatNumber",
-            "zip"                       : "global.contact_show_data_values.zip",
-            "timezone"                  : "global.contact_show_data_values.timezone",
-            "opening_times"             : "global.contact_show_data_values.opening_times"
+            "name"                      : "contactShowDataValuesName",
+            "ceo"                       : "contactShowDataValuesCeo",
+            "city"                      : "contactShowDataValuesCity",
+            "country"                   : "contactShowDataValuesCountry",
+            "email"                     : "contactShowDataValuesEmail",
+            "fax"                       : "contactShowDataValuesFax",
+            "fon"                       : "contactShowDataValuesFon",
+            "hotline"                   : "contactShowDataValuesHotline",
+            "street"                    : "contactShowDataValuesStreet",
+            "vatNumber"                 : "contactShowDataValuesVatNumber",
+            "zip"                       : "contactShowDataValuesZip",
+            "timezone"                  : "contactShowDataValuesTimezone",
+            "opening_times"             : "contactShowDataValuesOpeningTimes"
         },
         "default"                     : "street, zip, city, hotline, email, opening_times"
     },
     {
-      "tab"     : "global.tab",
+      "tab"     : "globalTab",
       "key"     : "global.google_recaptcha_api_key",
       "label"   : "Google reCAPTCHA website key",
       "type"    : "text",
       "default" : ""
     },
     {
-        "tab"                         : "global.tab",
+        "tab"                         : "globalTab",
         "key"                         : "contact.api_key",
         "label"                       : "Google Maps API key",
         "type"                        : "text",
         "default"                     : "API key"
     },
     {
-        "tab"                         : "global.tab",
+        "tab"                         : "globalTab",
         "key"                         : "contact.map_zoom",
         "label"                       : "Zoom level",
         "type"                        : "text",
         "default"                     : "16"
     },
     {
-        "tab"                         : "global.tab",
+        "tab"                         : "globalTab",
         "key"                         : "contact.map_show_in_mobile",
         "label"                       : "Show map in mobile view",
         "type"                        : "checkbox",
