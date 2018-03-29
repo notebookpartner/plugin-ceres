@@ -459,6 +459,11 @@
             "description"   : "Add content before the prices in the category item view."
         },
         {
+            "key"           : "CategoryItem.BeforePricesVue",
+            "name"          : "Category item list: Before prices container (Vue)",
+            "description"   : "Add content before the prices in the category item view (Vue)."
+        },
+        {
             "key"           : "CategoryItem.AfterPrices",
             "name"          : "Category item list: After prices container",
             "description"   : "Add content after the prices in the category item view."

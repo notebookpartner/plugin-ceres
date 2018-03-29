@@ -87,6 +87,7 @@
             </a>
             <div class="thumb-meta">
                 {{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}
+                {{ LayoutContainer.show("Ceres::CategoryItem.BeforePricesVue") }}
 
                 <div class="prices">
                     {% if item.data.prices.rrp is defined and item.data.prices.rrp.price.value != 0 %}
