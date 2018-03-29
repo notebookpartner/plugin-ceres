@@ -41,7 +41,7 @@
 					}
 				},
 				"global.enableOldUrlPattern": {
-					"type": "inputText",
+					"type": "checkBox",
 					"required": false,
 					"label": "Enable Callisto route pattern for items",
 					"options": {
