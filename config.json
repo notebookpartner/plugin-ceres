@@ -76,7 +76,7 @@
 						"defaultValue": "Montag - Freitag, 00:00 - 24:00"
 					}
 				},
-				"global.show_data": {
+				"contact.show_data": {
 					"type": "multiCheckBox",
 					"required": false,
 					"label": "Show contact data",
