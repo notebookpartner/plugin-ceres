@@ -7,6 +7,13 @@ Vue.component("single-item", {
         "attributeNameMap"
     ],
 
+    data()
+    {
+        return {
+            isVariationSelected: true
+        };
+    },
+
     computed:
     {
         isDescriptionTabActive()
@@ -27,6 +34,8 @@ Vue.component("single-item", {
 
         ...Vuex.mapGetters([
             "variationTotalPrice",
+            "variationMissingProperties",
+            "variationGroupedProperties",
             "variationGraduatedPrice"
         ])
     },

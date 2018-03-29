@@ -28,9 +28,9 @@ Vue.component("basket-list-item", {
     {
         image()
         {
-            const img = this.$options.filters.itemImages(this.basketItem.variation.data.images, "urlPreview")[0];
+            const itemImages = this.$options.filters.itemImages(this.basketItem.variation.data.images, "urlPreview");
 
-            return img;
+            return this.$options.filters.itemImage(itemImages);
         },
 
         altText()
@@ -125,6 +125,18 @@ Vue.component("basket-list-item", {
                         this.waiting = false;
                     });
             }
+        },
+
+        isPropertyVisible(propertyId)
+        {
+            const property = this.basketItem.variation.data.properties.find(property => property.property.id === parseInt(propertyId));
+
+            if (property)
+            {
+                return property.property.isShownAtCheckout;
+            }
+
+            return false;
         }
     }
 });

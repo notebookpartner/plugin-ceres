@@ -41,14 +41,18 @@
 
                     <!-- Variation -->
                     <div class="row m-b-1" v-if="variations.length > 0">
-                        <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variations="variations" :preselect="currentVariation.variation.id"></variation-select>
+                        <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variations="variations" :preselect="currentVariation.variation.id" @is-valid-change="isVariationSelected = $event"></variation-select>
                     </div>
                     <!-- /Variation -->
 
                     <slot name="BeforePrice"></slot>
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <order-properties template="#vue-order-properties" v-if="currentVariation.filter.isSalable"></order-properties>
+                    </div> -->
+
+                    <div class="row" v-if="currentVariation.filter.isSalable && variationGroupedProperties.length">
+                        <order-property-list></order-property-list>
                     </div>
 
                     <graduated-prices template="#vue-graduated-prices"></graduated-prices>
@@ -81,6 +85,12 @@
                                 ${ variationGraduatedPrice.basePrice }
                             </span>
                         </div>
+
+                        <div>
+                            Entspricht:
+                            <span>${ (currentVariation.unit.content * $store.state.item.variationOrderQuantity).toFixed(2) }</span>
+                            <span>${ currentVariation.unit.names.name }</span>
+                        </div>
                     </div>
 
                     <slot name="AfterPrice"></slot>
@@ -93,7 +103,13 @@
 
                     <div class="row m-y-1">
                         <slot name="BeforeAddToBasket"></slot>
-                        <add-to-basket template="#vue-add-to-basket" v-if="currentVariation.filter.isSalable" :item="$store.state.item.variation.documents[0].data" :show-quantity="true"></add-to-basket>
+                        <add-to-basket
+                                template="#vue-add-to-basket"
+                                v-if="currentVariation.filter.isSalable"
+                                :item="$store.state.item.variation.documents[0].data"
+                                :show-quantity="true"
+                                :missing-order-properties="variationMissingProperties"
+                                :is-variation-selected="isVariationSelected"></add-to-basket>
                         <slot name="AfterAddToBasket"></slot>
                     </div>
 
