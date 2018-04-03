@@ -3,7 +3,7 @@
 	"menu": {
 		"global": {
 			"label": "Globale Einstellungen",
-			"settings": {
+			"formFields": {
 				"header.company_name": {
 					"type": "inputText",
 					"required": false,
@@ -171,7 +171,7 @@
 		},
 		"homepage": {
 			"label": "Homepage",
-			"settings": {
+			"formFields": {
 				"default.homepage": {
 					"type": "checkBox",
 					"required": false,
