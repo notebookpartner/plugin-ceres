@@ -107,121 +107,112 @@
         "default"                     : "false"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "default.homepage",
-        "label"     : {"de": "Zeige Standard Hompeage", "en": "Show default homepage"},
+        "label"     : "homepageShowDefault",
         "type"      : "checkbox",
         "default"   : "true"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.sliderItemId1",
-        "label"     : {
-            "de": "ID der Artikelvariation, die zuerst im Image Slider angezeigt wird",
-            "en": "ID of the item variation to display in the first slide of the image slider"
-        },
+        "label"     : "homepageFirstItemDisplay",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.sliderImageUrl1",
-        "label"     : {"de": "URL des ersten Bildes", "en": "URL to the image of the first slide"},
+        "label"     : "homepageUrlToFirstImage",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.sliderItemId2",
-        "label"     : {
-            "de": "ID der Artikelvariation, die an zweiter Stelle im Image Slider angezeigt wird",
-            "en": "ID of the item variation to display in the second slide of the image slider"
-        },
+        "label"     : "homepageSecondItemDisplay",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.sliderImageUrl2",
-        "label"     : {"de": "URL des zweiten Bildes", "en": "URL to the image of the second slide"},
+        "label"     : "homepageUrlToSecondImage",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.sliderItemId3",
-        "label"     : {
-            "de": "ID der Artikelvariation, die an dritter Stelle im Image Slider angezeigt wird",
-            "en": "ID of the item variation to display in the third slide of the image slider"
-        },
+        "label"     : "homepageThirdItemDisplay",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.sliderImageUrl3",
-        "label"     : {"de": "URL des dritten Bildes", "en": "URL to the image of the third slide"},
+        "label"     : "homepageUrlToThirdImage",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.heroExtraItemId1",
         "label"     : "ID of the item variation to display in the upper item preview",
         "type"      : "text",
         "default"   : ""
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.heroExtraImageUrl1",
         "label"     : "URL to the image of the upper item preview",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.heroExtraItemId2",
         "label"     : "ID of the item variation to display in the lower item preview",
         "type"      : "text",
         "default"   : ""
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.heroExtraImageUrl2",
         "label"     : "URL to the image of the lower item preview",
         "type"      : "text"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.homepageCategory1",
         "label"     : "Category to display in the first category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.homepageCategory2",
         "label"     : "Category to display in the second category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.homepageCategory3",
         "label"     : "Category to display in the first list of items",
         "type"      : "category_select"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.homepageCategory4",
         "label"     : "Category to display in the third category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.homepageCategory5",
         "label"     : "Category to display in the fourth category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : {"de": "Homepage", "en": "Homepage"},
+        "tab"       : "homepage",
         "key"       : "homepage.homepageCategory6",
         "label"     : "Category to display in the second list of items",
         "type"      : "category_select"
     },
     {
-        "tab"       : {"de": "Kopfzeile", "en": "Header"},
+        "tab"       : "header",
         "key"       : "header.show_navbars",
         "label"     : "Position of the navigation bar",
         "type"      : "dropdown",
@@ -234,14 +225,14 @@
         "default"   : "top"
     },
     {
-        "tab"       : {"de": "Kopfzeile", "en": "Header"},
+        "tab"       : "header",
         "key"       : "header.fixed_navbar",
         "label"     : "Fix the navigation bar at the top of the page",
         "type"      : "checkbox",
         "default"   : "true"
     },
     {
-        "tab"       : {"de": "Kopfzeile", "en": "Header"},
+        "tab"       : "header",
         "key"       : "header.show_category_types",
         "label"     : "Type of categories rendered in the navigation",
         "type"      : "dropdown",
@@ -254,7 +245,7 @@
         "default"   : "all"
     },
     {
-        "tab"       : {"de": "Kopfzeile", "en": "Header"},
+        "tab"       : "header",
         "key"       : "header.basket_values",
         "label"     : "Show shopping cart information",
         "type"      : "dropdown",
@@ -267,7 +258,7 @@
         "default"   : "sum"
     },
     {
-        "tab"           : {"de": "Kopfzeile", "en": "Header"},
+        "tab"           : "header",
         "key"           : "header.megamenu_levels",
         "label"         : "Category levels in mega menu",
         "type"          : "dropdown",
@@ -281,21 +272,21 @@
         "default"       : "1"
     },
     {
-        "tab"           : {"de": "Kopfzeile", "en": "Header"},
+        "tab"           : "header",
         "key"           : "header.megamenu_items_stage_1",
         "label"         : "Number of categories in level 2",
         "type"          : "text",
         "default"       : "30"
     },
     {
-        "tab"           : {"de": "Kopfzeile", "en": "Header"},
+        "tab"           : "header",
         "key"           : "header.megamenu_items_stage_2",
         "label"         : "Number of categories in level 3",
         "type"          : "text",
         "default"       : "3"
     },
     {
-        "tab"           : {"de": "Kopfzeile", "en": "Header"},
+        "tab"           : "header",
         "key"           : "header.megamenu_items_stage_3",
         "label"         : "Number of categories in level 4",
         "type"          : "text",
