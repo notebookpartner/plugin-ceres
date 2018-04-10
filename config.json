@@ -1,218 +1,218 @@
 [
     {
-        "tab"       : "globalTab",
+        "tab"       : "Config.globalTab",
         "key"       : "header.company_name",
-        "label"     : "globalHeaderCompanyName",
+        "label"     : "Config.globalHeaderCompanyName",
         "type"      : "text",
         "default"   : "Ceres Webshop"
     },
     {
-        "tab"       : "globalTab",
+        "tab"       : "Config.globalTab",
         "key"       : "header.company_logo",
-        "label"     : "globalHeaderCompanyLogo",
+        "label"     : "Config.globalHeaderCompanyLogo",
         "type"      : "text",
         "default"   : "images/ceres-logo.svg"
     },
     {
-        "tab"       : "globalTab",
+        "tab"       : "Config.globalTab",
         "key"       : "global.shippingCostsCategoryId",
-        "label"     : "globalShippingCostsCategoryId",
+        "label"     : "Config.globalShippingCostsCategoryId",
         "type"      : "category_select"
     },
     {
-        "tab"       : "globalTab",
+        "tab"       : "Config.globalTab",
         "key"       : "global.default_contact_class_b2b",
-        "label"     : "globalDefaultContactClassB2b",
+        "label"     : "Config.globalDefaultContactClassB2b",
         "type"      : "text",
         "default"   : ""
     },
     {
-        "tab"       : "globalTab",
+        "tab"       : "Config.globalTab",
         "key"       : "global.enableOldUrlPattern",
-        "label"     : "globalEnableOldUrlPattern",
+        "label"     : "Config.globalEnableOldUrlPattern",
         "type"      : "checkbox",
         "default"   : "false"
     },
 
     {
-        "tab"                         : "globalTab",
+        "tab"                         : "Config.globalTab",
         "key"                         : "contact.shop_mail",
-        "label"                       : "contactShopMail",
+        "label"                       : "Config.contactShopMail",
         "type"                        : "text",
         "default"                     : "your@email.com"
     },
     {
-        "tab"                         : "globalTab",
+        "tab"                         : "Config.globalTab",
         "key"                         : "contact.opening_times",
-        "label"                       : "contactOpeningTimes",
+        "label"                       : "Config.contactOpeningTimes",
         "type"                        : "text",
         "default"                     : "Montag - Freitag, 00:00 - 24:00"
     },
     {
-        "tab"                         : "globalTab",
+        "tab"                         : "Config.globalTab",
         "key"                         : "contact.en.opening_times",
-        "label"                       : "contactEnOpeningTimes",
+        "label"                       : "Config.contactEnOpeningTimes",
         "type"                        : "text",
         "default"                     : "Monday - Friday, 00:00 - 24:00"
     },
     {
-        "tab"                         : "globalTab",
+        "tab"                         : "Config.globalTab",
         "key"                         : "contact.show_data",
-        "label"                       : "contactShowData",
+        "label"                       : "Config.contactShowData",
         "type"                        : "multi_select",
         "possibleValues"              :
         {
-            "name"                      : "contactShowDataValuesName",
-            "ceo"                       : "contactShowDataValuesCeo",
-            "city"                      : "contactShowDataValuesCity",
-            "country"                   : "contactShowDataValuesCountry",
-            "email"                     : "contactShowDataValuesEmail",
-            "fax"                       : "contactShowDataValuesFax",
-            "fon"                       : "contactShowDataValuesFon",
-            "hotline"                   : "contactShowDataValuesHotline",
-            "street"                    : "contactShowDataValuesStreet",
-            "vatNumber"                 : "contactShowDataValuesVatNumber",
-            "zip"                       : "contactShowDataValuesZip",
-            "timezone"                  : "contactShowDataValuesTimezone",
-            "opening_times"             : "contactShowDataValuesOpeningTimes"
+            "name"                      : "Config.contactShowDataValuesName",
+            "ceo"                       : "Config.contactShowDataValuesCeo",
+            "city"                      : "Config.contactShowDataValuesCity",
+            "country"                   : "Config.contactShowDataValuesCountry",
+            "email"                     : "Config.contactShowDataValuesEmail",
+            "fax"                       : "Config.contactShowDataValuesFax",
+            "fon"                       : "Config.contactShowDataValuesFon",
+            "hotline"                   : "Config.contactShowDataValuesHotline",
+            "street"                    : "Config.contactShowDataValuesStreet",
+            "vatNumber"                 : "Config.contactShowDataValuesVatNumber",
+            "zip"                       : "Config.contactShowDataValuesZip",
+            "timezone"                  : "Config.contactShowDataValuesTimezone",
+            "opening_times"             : "Config.contactShowDataValuesOpeningTimes"
         },
         "default"                     : "street, zip, city, hotline, email, opening_times"
     },
     {
-      "tab"     : "globalTab",
+      "tab"     : "Config.globalTab",
       "key"     : "global.google_recaptcha_api_key",
       "label"   : "Google reCAPTCHA website key",
       "type"    : "text",
       "default" : ""
     },
     {
-        "tab"                         : "globalTab",
+        "tab"                         : "Config.globalTab",
         "key"                         : "contact.api_key",
         "label"                       : "Google Maps API key",
         "type"                        : "text",
         "default"                     : "API key"
     },
     {
-        "tab"                         : "globalTab",
+        "tab"                         : "Config.globalTab",
         "key"                         : "contact.map_zoom",
         "label"                       : "Zoom level",
         "type"                        : "text",
         "default"                     : "16"
     },
     {
-        "tab"                         : "globalTab",
+        "tab"                         : "Config.globalTab",
         "key"                         : "contact.map_show_in_mobile",
         "label"                       : "Show map in mobile view",
         "type"                        : "checkbox",
         "default"                     : "false"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "default.homepage",
-        "label"     : "homepageShowDefault",
+        "label"     : "Config.homepageShowDefault",
         "type"      : "checkbox",
         "default"   : "true"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.sliderItemId1",
-        "label"     : "homepageFirstItemDisplay",
+        "label"     : "Config.homepageFirstItemDisplay",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.sliderImageUrl1",
-        "label"     : "homepageUrlToFirstImage",
+        "label"     : "Config.homepageUrlToFirstImage",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.sliderItemId2",
-        "label"     : "homepageSecondItemDisplay",
+        "label"     : "Config.homepageSecondItemDisplay",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.sliderImageUrl2",
-        "label"     : "homepageUrlToSecondImage",
+        "label"     : "Config.homepageUrlToSecondImage",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.sliderItemId3",
-        "label"     : "homepageThirdItemDisplay",
+        "label"     : "Config.homepageThirdItemDisplay",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.sliderImageUrl3",
-        "label"     : "homepageUrlToThirdImage",
+        "label"     : "Config.homepageUrlToThirdImage",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.heroExtraItemId1",
         "label"     : "ID of the item variation to display in the upper item preview",
         "type"      : "text",
         "default"   : ""
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.heroExtraImageUrl1",
         "label"     : "URL to the image of the upper item preview",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.heroExtraItemId2",
         "label"     : "ID of the item variation to display in the lower item preview",
         "type"      : "text",
         "default"   : ""
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.heroExtraImageUrl2",
         "label"     : "URL to the image of the lower item preview",
         "type"      : "text"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.homepageCategory1",
         "label"     : "Category to display in the first category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.homepageCategory2",
         "label"     : "Category to display in the second category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.homepageCategory3",
         "label"     : "Category to display in the first list of items",
         "type"      : "category_select"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.homepageCategory4",
         "label"     : "Category to display in the third category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.homepageCategory5",
         "label"     : "Category to display in the fourth category preview",
         "type"      : "category_select"
     },
     {
-        "tab"       : "homepage",
+        "tab"       : "Config.homepage",
         "key"       : "homepage.homepageCategory6",
         "label"     : "Category to display in the second list of items",
         "type"      : "category_select"
     },
     {
-        "tab"       : "header",
+        "tab"       : "Config.header",
         "key"       : "header.show_navbars",
         "label"     : "Position of the navigation bar",
         "type"      : "dropdown",
@@ -225,14 +225,14 @@
         "default"   : "top"
     },
     {
-        "tab"       : "header",
+        "tab"       : "Config.header",
         "key"       : "header.fixed_navbar",
         "label"     : "Fix the navigation bar at the top of the page",
         "type"      : "checkbox",
         "default"   : "true"
     },
     {
-        "tab"       : "header",
+        "tab"       : "Config.header",
         "key"       : "header.show_category_types",
         "label"     : "Type of categories rendered in the navigation",
         "type"      : "dropdown",
@@ -245,7 +245,7 @@
         "default"   : "all"
     },
     {
-        "tab"       : "header",
+        "tab"       : "Config.header",
         "key"       : "header.basket_values",
         "label"     : "Show shopping cart information",
         "type"      : "dropdown",
@@ -258,7 +258,7 @@
         "default"   : "sum"
     },
     {
-        "tab"           : "header",
+        "tab"           : "Config.header",
         "key"           : "header.megamenu_levels",
         "label"         : "Category levels in mega menu",
         "type"          : "dropdown",
@@ -272,21 +272,21 @@
         "default"       : "1"
     },
     {
-        "tab"           : "header",
+        "tab"           : "Config.header",
         "key"           : "header.megamenu_items_stage_1",
         "label"         : "Number of categories in level 2",
         "type"          : "text",
         "default"       : "30"
     },
     {
-        "tab"           : "header",
+        "tab"           : "Config.header",
         "key"           : "header.megamenu_items_stage_2",
         "label"         : "Number of categories in level 3",
         "type"          : "text",
         "default"       : "3"
     },
     {
-        "tab"           : "header",
+        "tab"           : "Config.header",
         "key"           : "header.megamenu_items_stage_3",
         "label"         : "Number of categories in level 4",
         "type"          : "text",
