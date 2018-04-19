@@ -12,21 +12,16 @@
     {{ component( "Ceres::MyAccount.Components.History" ) }}
     {{ component( "Ceres::MyAccount.Components.BankDataSelect" ) }}
 
-    {% set userObject = services.customer.getContact() %}
-    {% set userBankData = services.contactBank.getBanksOfContact(frontend.Account.AccountContactId) %}
-    {% set isReturnActive = services.order.isReturnActive() %}
-    {% set contactHasReturns = services.customer.hasReturns() %}
-
     <div class="page-content myaccount container-max m-b-3 m-t-1">
         <!-- HEADER -->
         <div class="row m-b-3">
             <div class="col-sm-9">
                 <h1 class="h2">{{ trans("Ceres::Template.myAccount") }}</h1>
                 {% if frontend.Account.getIsAccountLoggedIn %}
-                    {% if userObject.firstName|length > 0 and userObject.lastName|length > 0 %}
-                        <span class="text-muted">{{ trans("Ceres::Template.myAccountHello", {"username": userObject.firstName ~ " " ~ userObject.lastName}) }}</span>
+                    {% if contact.firstName|length > 0 and contact.lastName|length > 0 %}
+                        <span class="text-muted">{{ trans("Ceres::Template.myAccountHello", {"username": contact.firstName ~ " " ~ contact.lastName}) }}</span>
                     {% else %}
-                        <span class="text-muted">{{ trans("Ceres::Template.myAccountHello", {"username": userObject.email}) }}</span>
+                        <span class="text-muted">{{ trans("Ceres::Template.myAccountHello", {"username": contact.email}) }}</span>
                     {% endif %}
                 {% endif %}
             </div>
@@ -50,8 +45,8 @@
                 </h4>
                 <p class="text-muted small font-italic">{{ trans("Ceres::Template.myAccountAll") }} {{ trans("Ceres::Template.myAccountInvoiceAddresses") }}</p>
                 <div class="shipping-addresses-select">
-                    <invoice-address-select :address-list="{{ services.customer.getAddresses(1) | json_encode() }}"
-                                            :selected-address-id="{{ services.checkout.getBillingAddressId() | json_encode }}"></invoice-address-select>
+                    <invoice-address-select :address-list="{{ billingAddressList | json_encode() }}"
+                                            :selected-address-id="{{ selectedBillingAddressId | json_encode }}"></invoice-address-select>
                 </div>
             </div>
             <div class="col-md-6">
@@ -60,8 +55,8 @@
                 </h4>
                 <p class="text-muted small font-italic">{{ trans("Ceres::Template.myAccountAll") }} {{ trans("Ceres::Template.myAccountShippingAddresses") }}</p>
                 <div class="shipping-addresses-select">
-                    <shipping-address-select :address-list="{{ services.customer.getAddresses(2) | json_encode() }}"
-                                             :selected-address-id="{{ services.checkout.getDeliveryAddressId() | json_encode }}"></shipping-address-select>
+                    <shipping-address-select :address-list="{{ deliveryAddressList | json_encode() }}"
+                                             :selected-address-id="{{ selectedDeliveryAddressId | json_encode }}"></shipping-address-select>
                 </div>
             </div>
         </div>
@@ -76,7 +71,7 @@
                 <p class="text-muted small font-italic">{{ trans("Ceres::Template.myAccountChangeLoginData") }}</p>
 
                 <div class="card m-b-3">
-                    <account-settings template="#vue-account-settings" :user-data="{{ userObject }}">
+                    <account-settings template="#vue-account-settings" :user-data="{{ contact }}">
                         <account-settings>
                 </div>
             </div>
@@ -88,7 +83,7 @@
 
 
                 <p class="text-muted small font-italic">{{ trans("Ceres::Template.myAccountChangePaymentInformation") }}</p>
-                <bank-data-select template="#vue-bank-data-select" :user-bank-data="{{ userBankData }}"
+                <bank-data-select template="#vue-bank-data-select" :user-bank-data="{{ userBankData | json_encode }}"
                                   contact-id="{{ frontend.Account.AccountContactId }}"></bank-data-select>
 
             </div>
@@ -106,7 +101,7 @@
     <!-- HISTORY -->
     <history template="#vue-history" 
             :orders-per-page="{{ ordersPerPage }}"
-            :is-return-active="{{ isReturnActive | json_encode }}"
+            :is-return-active="{{ ceresConfig.myAccount.orderReturnActive | json_encode }}"
             :contact-has-returns="{{ contactHasReturns | json_encode }}">
     </history>
     <!-- ./HISTORY -->
