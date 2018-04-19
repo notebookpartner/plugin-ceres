@@ -7,9 +7,11 @@ use Ceres\Caching\SideNavigationCacheSettings;
 use Ceres\Config\CeresConfig;
 use Ceres\Contexts\CategoryContext;
 use Ceres\Contexts\CategoryItemContext;
+use Ceres\Contexts\CheckoutContext;
 use Ceres\Contexts\GlobalContext;
 use Ceres\Contexts\ItemSearchContext;
 use Ceres\Contexts\ItemWishListContext;
+use Ceres\Contexts\MyAccountContext;
 use Ceres\Contexts\OrderConfirmationContext;
 use Ceres\Contexts\OrderReturnContext;
 use Ceres\Contexts\PasswordResetContext;
@@ -43,8 +45,8 @@ class TemplateServiceProvider extends ServiceProvider
         'tpl.category.container'        => ['PageDesign.PageDesign',                GlobalContext::class],               // provide template to use for container categories
         'tpl.item'                      => ['Item.SingleItemWrapper',               SingleItemContext::class],                 // provide template to use for single items
         'tpl.basket'                    => ['Basket.Basket',                        GlobalContext::class],                       // provide template to use for basket
-        'tpl.checkout'                  => ['Checkout.CheckoutView',                GlobalContext::class],               // provide template to use for checkout
-        'tpl.my-account'                => ['MyAccount.MyAccount',                  GlobalContext::class],                 // provide template to use for my-account
+        'tpl.checkout'                  => ['Checkout.CheckoutView',                CheckoutContext::class],               // provide template to use for checkout
+        'tpl.my-account'                => ['MyAccount.MyAccount',                  MyAccountContext::class],                 // provide template to use for my-account
         'tpl.confirmation'              => ['Checkout.OrderConfirmation',           OrderConfirmationContext::class],          // provide template to use for confirmation
         'tpl.login'                     => ['Customer.Login',                       GlobalContext::class],                      // provide template to use for login
         'tpl.register'                  => ['Customer.Register',                    GlobalContext::class],                   // provide template to use for register
