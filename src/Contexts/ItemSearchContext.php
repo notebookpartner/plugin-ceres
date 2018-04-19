@@ -2,6 +2,7 @@
 
 namespace Ceres\Contexts;
 
+use Ceres\Contexts\Traits\ItemListTrait;
 use Ceres\Helper\SearchOptions;
 use IO\Helper\ContextInterface;
 use IO\Services\ItemSearch\SearchPresets\Facets;
@@ -10,7 +11,7 @@ use IO\Services\ItemSearch\Services\ItemSearchService;
 
 class ItemSearchContext extends GlobalContext implements ContextInterface
 {
-    use ItemListContext;
+    use ItemListTrait;
 
     public $isSearch;
     public $searchString;

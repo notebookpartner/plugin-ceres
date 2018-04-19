@@ -2,6 +2,7 @@
 
 namespace Ceres\Contexts;
 
+use Ceres\Contexts\Traits\ItemListTrait;
 use Ceres\Helper\SearchOptions;
 use IO\Helper\ContextInterface;
 use IO\Services\ItemSearch\SearchPresets\CategoryItems;
@@ -9,7 +10,7 @@ use IO\Services\ItemSearch\SearchPresets\Facets;
 
 class CategoryItemContext extends CategoryContext implements ContextInterface
 {
-    use ItemListContext;
+    use ItemListTrait;
     
     public function init($params)
     {

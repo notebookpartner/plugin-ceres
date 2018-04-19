@@ -1,13 +1,13 @@
 <?php
 
-namespace Ceres\Contexts;
+namespace Ceres\Contexts\Traits;
 
 use Ceres\Helper\ExternalSearch;
 use Ceres\Helper\SearchOptions;
 use IO\Services\ItemSearch\SearchPresets\VariationList;
 use IO\Services\ItemSearch\Services\ItemSearchService;
 
-trait ItemListContext
+trait ItemListTrait
 {
     public $currentPage;
     public $pageMax;
