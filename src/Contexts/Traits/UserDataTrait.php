@@ -20,10 +20,8 @@ trait UserDataTrait
 
     public $contactHasReturns = null;
 
-    protected function initUserData($params)
+    protected function initUserData()
     {
-        parent::init($params);
-
         /** @var CustomerService $customerService */
         $customerService = pluginApp( CustomerService::class );
 
