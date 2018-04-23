@@ -1180,6 +1180,13 @@
         "default"                   : "billing_address.name1, billing_address.salutation"
     },
     {
+        "tab"               : "Checkout and My account",
+        "key"               : "billing_address.showContactNotName",
+        "label"             : "Show field for contact person instead of name in invoice address form (DE)",
+        "type"              : "checkbox",
+        "default"           : "false"
+    },
+    {
         "tab"                       : "Checkout and My account",
         "key"                       : "billing_address.require",
         "label"                     : "Enable invoice address field validation (DE)",

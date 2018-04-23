@@ -15,6 +15,7 @@ class CeresAddressConfig extends PluginConfig
     public $deliveryAddressShow_en;
     public $deliveryAddressRequire;
     public $deliveryAddressRequire_en;
+    public $showContactNotName;
 
     public function __construct(ConfigRepository $configRepository)
     {
@@ -159,5 +160,7 @@ class CeresAddressConfig extends PluginConfig
             ],
             []
         );
+
+        $this->showContactNotName = $this->getBooleanValue( "billing_address.showContactNotName", true );
     }
 }
