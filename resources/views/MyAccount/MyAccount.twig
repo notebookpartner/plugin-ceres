@@ -46,6 +46,7 @@
                 <p class="text-muted small font-italic">{{ trans("Ceres::Template.myAccountAll") }} {{ trans("Ceres::Template.myAccountInvoiceAddresses") }}</p>
                 <div class="shipping-addresses-select">
                     <invoice-address-select :address-list="{{ billingAddressList | json_encode() }}"
+                                            :contact="{{ contact | json_encode }}"
                                             :selected-address-id="{{ selectedBillingAddressId | json_encode }}"></invoice-address-select>
                 </div>
             </div>

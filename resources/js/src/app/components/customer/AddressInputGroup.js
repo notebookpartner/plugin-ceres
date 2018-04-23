@@ -29,6 +29,14 @@ Vue.component("address-input-group", {
         };
     },
 
+    computed:
+    {
+        showContactNotNameDE()
+        {
+            return App.config.addresses.showContactNotName && this.value.addressSalutation === 2;
+        }
+    },
+
     /**
      * Check whether the address data exists. Else, create an empty one
      */

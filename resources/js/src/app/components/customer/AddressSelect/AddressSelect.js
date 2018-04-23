@@ -14,6 +14,7 @@ Vue.component("address-select", {
     props: [
         "template",
         "addressType",
+        "contact",
         "showError"
     ],
 
@@ -174,6 +175,11 @@ Vue.component("address-select", {
                 this.addressToEdit = {countryId: this.shippingCountryId};
             }
 
+            if (parseInt(this.addressType) === 1 && !isNullOrUndefined(this.contact))
+            {
+                this.addressToEdit.contactPerson = this.contact.contactPerson;
+            }
+
             this.updateHeadline();
             ValidationService.unmarkAllFields($(this.$refs.addressModal));
             this.addressModal.show();
@@ -200,6 +206,11 @@ Vue.component("address-select", {
             {
                 this.addressToEdit.addressSalutation = 0;
                 this.addressToEdit.gender = "male";
+            }
+
+            if (parseInt(this.addressType) === 1 && !isNullOrUndefined(this.contact))
+            {
+                this.addressToEdit.contactPerson = this.contact.contactPerson;
             }
 
             this.updateHeadline();

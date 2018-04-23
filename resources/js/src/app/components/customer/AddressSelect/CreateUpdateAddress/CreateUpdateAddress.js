@@ -9,8 +9,8 @@ Vue.component("create-update-address", {
     props: [
         "addressData",
         "addressModal",
-        "modalType",
         "addressType",
+        "modalType",
         "template"
     ],
 
